@@ -12,11 +12,18 @@ class Database:
     @staticmethod
     def _get_connection():
 
-        return psycopg2.connect(
-                dbname = Database.DB_NAME ,
-                user = Database.USER_NAME ,
-                password = Database.USER_PASSWORD ,
-                host = get_postgres_host()
-                )
+        try:
+            return psycopg2.connect(
+                    dbname = Database.DB_NAME ,
+                    user = Database.USER_NAME ,
+                    password = Database.USER_PASSWORD ,
+                    host = get_postgres_host()
+                    )
+
+        except psycopg2.OperationalError as e:
+            print("Database connection failed")
+            print(e)
+
+        return None
 
 
