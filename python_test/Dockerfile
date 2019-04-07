@@ -3,4 +3,8 @@ RUN pip install psycopg2-binary
 
 COPY . /home
 WORKDIR /home
+
+ENV POSTGRES_USER blue
+ENV POSTGRES_PASSWORD blue
+ENV POSTGRES_DB blue
 CMD ["sh" , "program.sh"]
