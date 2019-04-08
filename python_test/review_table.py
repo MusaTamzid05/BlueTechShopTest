@@ -21,4 +21,25 @@ class ReviewTable:
 
         return True
 
+    @staticmethod
+    def get_unique_reviewers_count():
+        connection = Database.get_connection()
+
+        if connection is None:
+            return 0
+
+        cur = connection.cursor()
+        try:
+            cur.execute("SELECT COUNT(DISTINCT taster_twitter_handle)  FROM reviews;" )
+            return cur.fetchone()[0]
+        except AttributeError as e:
+            print(e)
+            return 0
+        finally:
+
+            cur.close()
+            connection.close()
+
+
+
 
