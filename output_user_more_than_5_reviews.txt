@@ -1,0 +1,17 @@
+@AnneInVino => 3685
+@bkfiona => 27
+@gordone_cellars => 4177
+@JoeCz => 5147
+@kerinokeefe => 10776
+@laurbuzz => 1835
+@mattkettmann => 6332
+@paulgwine  => 9532
+@suskostrzewa => 1085
+@vboone => 9537
+@vossroger => 25514
+@wawinereport => 4966
+@wineschach => 15134
+@winewchristina => 6
+@worldwineguys => 1005
+None => 31213
+
