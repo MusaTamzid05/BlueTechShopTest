@@ -4,10 +4,10 @@ PostgresSQL docker image was used here as a database server.
 
 To run the script ,go to repository root directory and run this command in the terminal
 
-chmod u+x run.sh
-./run.sh
+chmod u+x run.sh  
+./run.sh  
 
-!!!!! Note - The first python script(init_review.py)  that load the review data from the json file  takes more than 20 minutes.
+!!!!! Note - The first python script(init_review.py)  that load the review data from the json file  takes more than 20 minutes.  
 
 The file structure of this repo is given below:
 
