@@ -1,5 +1,6 @@
 from review_table import ReviewTable
 from user_info_table import UserInfoTable
+from twitter_api import Twitter
 
 '''
 The code has not been tested.Their was problem getting the twitter api key.

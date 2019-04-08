@@ -10,7 +10,7 @@ class Database:
     DB_HOST =  get_postgres_host()
 
     @staticmethod
-    def _get_connection():
+    def get_connection():
 
         try:
             return psycopg2.connect(

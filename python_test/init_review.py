@@ -6,6 +6,8 @@ def main():
     with open("data.json" , "r") as f:
         data = json.load(f)
 
+        print("There are total {} data found.Please be wait.".format(len(data)))
+
         for review_data in data:
             ReviewTable.insert(Review(review_data))
 
